@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: large;
+        }
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    div{
+      
+       background-color: grey;
+float: left;
+
+
+margin-left: 1%;
+border: 1px solid black;
+padding: 60px 0px;
+position: relative;
+    }
+h3{
+    position: absolute;
+    width: 22%;
+text-align: center;
+padding: 5px;
+position: absolute;
+top: 0px;
+right: 0px;
+
+}
+#h{
+    background-color: lightblue;
+}
+#ha{
+    background-color: yellow;
+}#hb{
+    background-color: lightgreen;
+}
+@media(min-width:992px){
+    .col-lg-4{
+float: left;
+width: 32%;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991px)  {
+    .col-md-6{
+        width:48%;
+        float:left;
+        margin:0.5%;
+    }
+}
+ @media (max-width:767px) {
+    .col-xs-1{
+        width : 98%;
+        float : left;
+        border : 1px solid black;
+        margin: 3%;
+
+    }
+ }  </style>
+</head>
+<body>
+    <h1>our menu</h1>
+   <div class="col-lg-4 col-md-6 col-xs-1"><h3 id="h">Chicken</h3>
+<p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae porro amet provident</p></div>
+<div class="col-lg-4 col-md-6 col-xs-1"><h3 id="ha">Beef</h3>
+    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae porro amet provident</p></div>
+    <div class="col-lg-4 col-md-6 col-xs-1"><h3 id="hb">Sushi</h3>
+        <p id="p3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae porro amet provident</p></div>
+
+</body>
+</html>
