@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+        <li><a href="#tabs-1">Cupcakes</a></li>
+        <li><a href="#tabs-2">Brownies</a></li>
+        <li><a href="#tabs-3">Cotton candy</a></li>
+    </ul>
+  
+    <div id="tabs-1">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni reprehenderit impedit officia? Temporibus sequi saepe alias cumque nesciunt. Consequatur libero beatae eaque. Sunt vero ipsa atque minus provident corporis. Aut quasi voluptatum, suscipit veniam ad dolor, temporibus sunt, blanditiis sint voluptas tempore laboriosam? Voluptatum exercitationem illo delectus omnis neque nesciunt!</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis expedita fugit illum placeat minima consequuntur asperiores mollitia voluptate unde provident esse quae voluptates ipsum dolorem, laborum facere dolores porro maiores eaque blanditiis ab labore ipsa. Tempora asperiores accusantium praesentium illum, reiciendis deleniti possimus porro veritatis blanditiis, vel facere, culpa commodi.</p>
+    </div>
+    <div id="tabs-2">
+        <p>brownies brownies
+             ipsum dolor sit, amet consectetur adipisicing elit. Magni reprehenderit impedit officia? Temporibus sequi saepe alias cumque nesciunt. Consequatur libero beatae eaque. Sunt vero ipsa atque minus provident corporis. Aut quasi voluptatum, suscipit veniam ad dolor, temporibus sunt, blanditiis sint voluptas tempore laboriosam? Voluptatum exercitationem illo delectus omnis neque nesciunt!</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis expedita fugit illum placeat minima consequuntur asperiores mollitia voluptate unde provident esse quae voluptates ipsum dolorem, laborum facere dolores porro maiores eaque blanditiis ab labore ipsa. Tempora asperiores accusantium praesentium illum, reiciendis deleniti possimus porro veritatis blanditiis, vel facere, culpa commodi.</p>
+    </div>
+    <div id="tabs-3">
+        <p>I love cotton candy
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni reprehenderit impedit officia? Temporibus sequi saepe alias cumque nesciunt. Consequatur libero beatae eaque. Sunt vero ipsa atque minus provident corporis. Aut quasi voluptatum, suscipit veniam ad dolor, temporibus sunt, blanditiis sint voluptas tempore laboriosam? Voluptatum exercitationem illo delectus omnis neque nesciunt!</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis expedita fugit illum placeat minima consequuntur asperiores mollitia voluptate unde provident esse quae voluptates ipsum dolorem, laborum facere dolores porro maiores eaque blanditiis ab labore ipsa. Tempora asperiores accusantium praesentium illum, reiciendis deleniti possimus porro veritatis blanditiis, vel facere, culpa commodi.</p>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+
+    
+    $('#tabs >ul>li>a').click(function(){
+        $('#tabs >ul>li>a').css({background:'#A2A2A2',color:'#cecece'})
+        $(this).css({background:'#eaeaea',color:'#333'})
+        const thisTab=$(this).attr('href')
+        $('#tabs>div:visible').fadeOut(300,'smooth',function(){
+            //callback function.....
+            $(thisTab).fadeIn(300) 
+        })
+      
+    })
+ 
+</script>
+</body>
+</html>
