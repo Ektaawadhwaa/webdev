@@ -38,7 +38,7 @@
         $('#tabs >ul>li>a').css({background:'#A2A2A2',color:'#cecece'})
         $(this).css({background:'#eaeaea',color:'#333'})
         const thisTab=$(this).attr('href')
-        $('#tabs>div:visible').fadeOut(300,'smooth',function(){
+        $('#tabs>div:visible').fadeOut(300 ,function(){
             //callback function.....
             $(thisTab).fadeIn(300) 
         })
