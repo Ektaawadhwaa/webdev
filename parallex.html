@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body,html{
+            height: 100%;
+            font-size: 20px;
+            color: grey;
+            font-weight: 600px;
+            line-height: 1.5em;
+        }
+        .img1{
+            background-image: url("img/image1.jpg");
+            height: 100%;
+            background-repeat: no-repeat;
+         
+        }
+        .img2{
+            background-image: url("img/image2.jpg");
+            height:400px;
+            background-repeat: no-repeat;
+        }
+        .img3{
+            background-image: url("img/image3.jpg");
+            height:400px;
+            background-repeat: no-repeat;
+        }
+        .img1,.img2,.img3{
+            background-position: center;
+            background-size: cover;
+            position:relative;
+            opacity: 0.70;
+            background-attachment: fixed;
+        }
+        section{
+            text-align: center;
+            padding: 50px,20px;
+            border: 2px solid lightcoral;
+        }
+        .section-light{
+            background-color: #f4f4f4;
+          color: #666;
+        }
+        .section-dark{
+            background-color: #282e34;
+            color: #ddd;
+        }
+        .text{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%;
+            color: black;
+            font-size: 50px;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+        }
+        .text .border{
+            background-color: #111;
+            color: white;
+            padding: 20px;
+        }
+        @media(max-width:568px){
+            .img1,.img2,.img3{
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img1">
+        <div class="text">
+            <span class="border">
+                Parallex Text
+            </span>
+        </div>
+    </div>
+ <section class="section-light">
+    <h2>Section 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam ut explicabo quibusdam saepe placeat dolor commodi quis ullam, blanditiis ipsa quaerat cum sed asperiores omnis doloremque nisi ab quam labore. Eligendi et aspernatur quidem laudantium amet earum sunt maiores sit neque expedita reprehenderit minima sed provident illum velit necessitatibus tempore, eum possimus quasi pariatur! Distinctio nesciunt cum non laborum debitis deleniti ex expedita quo sunt, temporibus necessitatibus ab reprehenderit. Numquam ducimus perspiciatis at id fuga? Possimus, commodi voluptas a maxime debitis, quasi velit omnis officia iure, eius vero. Dicta incidunt maxime odio optio quibusdam ad aliquam assumenda commodi. Nisi.</p>
+ </section>
+    <div class="img2">
+        <div class="text">
+            <span class="border">
+             image 2 text 
+            </span>
+        </div>
+    </div>
+    <section class="section-dark">
+        <h2>Section 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam ut explicabo quibusdam saepe placeat dolor commodi quis ullam, blanditiis ipsa quaerat cum sed asperiores omnis  illum velit necessitatibus tempore, eum possimus quasi pariatur! Distinctio nesciunt cum non laborum debitis deleniti ex expedita quo sunt, temporibus necessitatibus ab reprehenderit. Numquam ducimus perspiciatis at id fuga? Possimus, commodi voluptas a maxime debitis, quasi velit omnis officia iure, eius vero. Dicta incidunt maxime odio optio quibusdam ad aliquam assumenda commodi. Nisi.</p>
+     </section>
+    <div class="img3">
+        <div class="text">
+            <span class="border">
+          Image 3 text 
+            </span>
+        </div>
+    </div>
+    <section class="section-dark">
+        <h2>Section 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam ut explicabo quibusdam saepe placeat dolor commodi quis ullam, blanditiis ipsa quaerat cum sed asperiores omnis doloremque nisi ab quam labore. Eligendi et aspernatur quidem laudantium amet earum sunt maiores sit neque expedita reprehenderit minima sed provident illum velit necessitatibus tempore, eum possimus quasi pariatur! Distinctio nesciunt cum non laborum debitis deleniti ex expedita quo suntficia iure, eius vero. Dicta incidunt maxime odio optio quibusdam ad aliquam assumenda commodi. Nisi.</p>
+     </section>
+     <div class="img1">
+        <div class="text">
+            <span class="border">
+           Ekta Wadhwa
+            </span>
+        </div>
+    </div> 
+     
+</body>
+</html>
