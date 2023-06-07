@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgreen;
+}
+.body{
+    background: url("image4.jpg");
+ 
+  min-height: 100vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+ 
+  align-items: center;
+  margin: auto;
+  background-size: cover;
+  background-position: right;
+}
+ 
+#board{
+  
+    background: linear-gradient(rgb(11, 128, 11),rgb(182, 240, 66));
+    height: 92vmin;
+    width: 85vmin;
+    margin-left: 102px;
+    margin-top: 4px;
+    border: 2px solid black;
+display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(red,yellow);
+border:  2px solid violet;
+transform: scale(1.02);
+border-radius: 9px;
+
+}
+.snake{  
+    background:linear-gradient(green,orange);
+    border: .25vmin solid white;
+    border-radius: 10px;
+}
+.food{
+    background-color: rebeccapurple;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+#scoreBox{
+    position: absolute;
+    top: 14px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    right: 200px;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    right: 200px;
+}
+@media only screen and (max-width: 600px) {
+    #board {
+    width: 90vw;
+    height: 90vw;
+    }
+    
+    #scoreBox, #hiscoreBox {
+    font-size: 1.5rem;
+    }
+    }
+    
+    @media only screen and (max-width: 400px) {
+        #hiscoreBox {
+        display: none;
+        }
+        }
