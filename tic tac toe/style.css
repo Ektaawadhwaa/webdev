@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Roboto:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+
+*{
+    margin: 0;padding: 0;
+
+}
+ 
+nav{
+    height: 65px;
+    color: white;
+    background-color: palevioletred;
+    align-items: center;
+    font-size: 27px;
+    padding: 0 12px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+
+}
+.gamecontainer{
+display: flex;
+justify-content: center;
+background-color: palegreen;
+margin-top: 40px;
+}
+.container{
+display: grid;
+grid-template-rows: repeat(3,10vw);
+grid-template-columns:repeat(3,10vw) ;
+font-family: 'Roboto', serif;
+position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+ background-color: rgb(208, 168, 245);
+ cursor: pointer;
+}
+.line{
+    height: 5px;
+    width: 0px;
+    background-color: #911d91;
+    position:absolute;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+.gameinfo{
+    padding: 37px; 
+    font-family: 'Roboto', sans-serif;
+}
+.info{
+    font-size: 26px;
+margin: 0px 10px;
+font-family: 'Crimson Text',cursive;
+}
+.gameinfo h1{
+    font-size: 3rem; 
+margin: 14px 4px;
+}
+
+.imgbox img{
+ width: 0;
+ transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+ 
+#reset{
+    margin: 10px 10px;
+padding: 6px 30px;
+cursor: pointer;
+font-size: 17px;
+font-weight: bolder;
+background-color: #ffefde;
+border: 2px solid #422800;
+border-radius: 30px;
+box-shadow: #422800 4px 4px 0 0;
+    }
+    
+    #reset:hover {
+      background-color: #fff;
+    }
+ 
+@media screen and (max-width:900px){
+    .gamecontainer{
+        flex-wrap: wrap;
+        margin-top: 2px;
+    }
+    .container{
+        grid-template-rows: repeat(3,20vw);
+grid-template-columns: repeat(3,23vw);
+    }
+  .gameinfo{ 
+         margin-top: 10px;
+        }
+        .gameinfo h1{
+            font-size: 1.8rem;
+        }
+.imgbox img{
+    width: 200px;
+}
+.intro{
+    margin: 2px;
+}
+}
+ 
+.intro{
+    border: 2px solid salmon;
+color: cadetblue;
+border-radius: 5px;
+width: 234px;
+font-size: 35px;
+background-color: azure;
+position: absolute;
+ 
+right: 21px;
+margin: 25px;
+padding: 10px 20px;
+box-shadow: crimson 7px 7px 0 0;
+font-weight: bolder;
+}
